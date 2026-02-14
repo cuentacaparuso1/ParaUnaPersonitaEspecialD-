@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Log: Mxxi & Yo</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expanded-img">
+    </div>
+
+    <div id="cover-screen">
+        <div class="loader-container">
+            <div class="pixel-spinner">💖</div>
+            <h1 class="glitch-text" data-text="MXXI.EXE">MXXI.EXE</h1>
+            <p>Cargando archivos .PNG de amistad...</p>
+            <button class="btn-retro" id="btnAbrir">➤ INICIAR SISTEMA</button>
+            <p class="tiny-text">Sound: ON 🔊</p>
+        </div>
+    </div>
+
+    <div class="desktop">
+        
+        <div class="top-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="bar-title">♥ San_Valentin_Special_Mxxi.html</span>
+        </div>
+
+        <div class="window-content">
+            
+            <section id="tab-perfil" class="tab active">
+                <div class="profile-layout">
+                    <div class="polaroid-main">
+                        <img src="Portada.png" alt="Mxxi" onerror="this.src='https://placehold.co/400x300?text=Error+Portada.png'">
+                        <span class="tape"></span>
+                    </div>
+                    
+                    <div class="rpg-stats">
+                        <h3>PLAYER: MXXI (Enana)</h3>
+                        <div class="stat-row">
+                            <span>Clase:</span> <span>Duo Imbatible</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Nivel:</span> <span>Amistad Infinita</span>
+                        </div>
+                        <div class="stat-bar-container">
+                            <span>Paciencia</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="stat-bar-container">
+                            <span>Bullying</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="stat-bar-container">
+                            <span>Cariño</span>
+                            <div class="bar-bg"><div class="bar-fill" style="width: 100%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="retro-box">
+                    <p class="typing-effect">"Conectar así de rápido ya es un milagro." ✨</p>
+                </div>
+            </section>
+
+            <section id="tab-carta" class="tab">
+                <div class="notepad">
+                    <div class="notepad-header">carta_san_valentin.txt</div>
+                    <div class="notepad-body">
+                        <p id="typewriter-text"></p> </div>
+                </div>
+                <div id="raw-text" style="display:none;">
+Hola Mxxi, feliz día de la amistad. ✨
+
+Quería decirte que te agradezco mucho por siempre estar ahí para mí. Sé que eres una chica súper buena, aunque a veces te moleste un poco.
+
+Conectamos muy rápido desde TikTok, y eso es algo que valoro demasiado porque hoy en día es muy difícil encontrar a alguien con quien vibrar así de simple y real. ⚡
+
+Estaré a tu lado siempre que tú quieras, hasta donde el tiempo lo permita. Mientras tú lo desees, aquí tendrás a tu amigo firme. ¡Espero que lo pases de lo mejor con toda tu familia!
+                </div>
+            </section>
+
+            <section id="tab-galeria" class="tab">
+                <h3 class="pixel-title">📂 /Recuerdos/Fotos.png</h3>
+                <div class="gallery-scroll">
+                    <div class="photo-card"><img src="foto1.png" onerror="this.src='https://placehold.co/150?text=foto1.png'"></div>
+                    <div class="photo-card"><img src="foto2.png" onerror="this.src='https://placehold.co/150?text=foto2.png'"></div>
+                    <div class="photo-card"><img src="foto3.png" onerror="this.src='https://placehold.co/150?text=foto3.png'"></div>
+                    <div class="photo-card"><img src="foto4.png" onerror="this.src='https://placehold.co/150?text=foto4.png'"></div>
+                    <div class="photo-card"><img src="foto5.png" onerror="this.src='https://placehold.co/150?text=foto5.png'"></div>
+                    <div class="photo-card"><img src="foto6.png" onerror="this.src='https://placehold.co/150?text=foto6.png'"></div>
+                    <div class="photo-card"><img src="foto7.png" onerror="this.src='https://placehold.co/150?text=foto7.png'"></div>
+                    <div class="photo-card"><img src="foto8.png" onerror="this.src='https://placehold.co/150?text=foto8.png'"></div>
+                </div>
+                <p class="hint">Desliza para ver más recuerdos >>></p>
+            </section>
+
+            <section id="tab-story" class="tab">
+                <h3 class="pixel-title">💾 System_Logs.dat</h3>
+                
+                <div class="file-folder">
+                    <span class="icon">📱</span>
+                    <div class="folder-info">
+                        <strong>Origen_TikTok.log</strong>
+                        <p>Fue aparecer en el feed y ¡pum! Conexión instantánea. De los mejores "matches" de amistad.</p>
+                    </div>
+                </div>
+
+                <div class="file-folder">
+                    <span class="icon">📏</span>
+                    <div class="folder-info">
+                        <strong>User_Nickname.cfg</strong>
+                        <p>Estado: Enana detectada. Sé que eres una chica genial, aunque me guste molestarte con la altura jaja.</p>
+                    </div>
+                </div>
+
+                <div class="file-folder">
+                    <span class="icon">♓</span>
+                    <div class="folder-info">
+                        <strong>Piscis_Mood.exe</strong>
+                        <p>22 de Febrero. Ya casi es tu cumple. Dicen que los Piscis son únicos... y confirmo, no hay otra como tú. ✨</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tab-final" class="tab">
+                <div class="final-card">
+                    <div class="photo-frame-simple">
+                        <img src="foto12.png" alt="Final" onerror="this.src='https://placehold.co/400x300?text=foto12.png'">
+                    </div>
+                    
+                    <div class="console-text">
+                        <p>> Bueno amiguita Mxxi...</p>
+                        <p>> En serio te aprecio mucho. Perdona que se me complicó un poco terminar esto a tiempo jaja, si tuviera más tiempo lo habría hecho mejor y con más fotitos jeje.</p>
+                        <p>> Pero aquí estamos, sin máscaras. Estaré a tu lado hasta que tú quieras.</p>
+                        <p>> ¡Feliz día de la amistad!</p>
+                        <p class="blink">> Los mejores recuerdos son los que aún no creamos. ;)</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="dock">
+            <button class="dock-btn active" data-target="tab-perfil">👤<span class="tooltip">Perfil</span></button>
+            <button class="dock-btn" data-target="tab-carta">📝<span class="tooltip">Mensaje</span></button>
+            <button class="dock-btn" data-target="tab-galeria">📸<span class="tooltip">Fotos</span></button>
+            <button class="dock-btn" data-target="tab-story">💾<span class="tooltip">Logs</span></button>
+            <button class="dock-btn" data-target="tab-final">✨<span class="tooltip">Final</span></button>
+        </div>
+
+    </div>
+
+    <audio id="audioPlayer" loop><source src="musica.mp3" type="audio/mpeg"></audio>
+    <audio id="popSound"><source src="pop.mp3" type="audio/mpeg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
